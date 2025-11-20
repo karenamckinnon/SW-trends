@@ -1244,7 +1244,7 @@ else:
 
     da_interp = my_utils.regrid_to_shared_grid(da_era5_clearsky, shared_lats, shared_lons)
     da_era5_clearsky = da_interp.sel(time=slice('%04i' % years_to_use[0], '%04i' % years_to_use[1]))
-    del da_interp, da_pad
+    del da_interp
     da_era5_clearsky.to_netcdf(savename)
 
 beta_cs = my_xutils.compute_linear_trend_per_year(
