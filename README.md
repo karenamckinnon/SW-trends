@@ -18,6 +18,12 @@ The CMIP6 data is accessed and processed in cmip-pangeo-process (either in noteb
 
 The notebook and script paper-figs then performs all the analysis and makes all the figures.
 
+The environment.yml can be used to reproduce the coding environment. 
+
+Both scripts also rely on https://github.com/karenamckinnon/helpful_utilities
+
+Please email Prof. Karen McKinnon (kmckinnon@ucla.edu) with questions or comments.
+
 ## Credits
 
 This package was created with [Cookiecutter](https://github.com/audreyfeldroy/cookiecutter) and the [audreyfeldroy/cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage) project template.
