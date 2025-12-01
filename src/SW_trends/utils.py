@@ -64,6 +64,6 @@ def regrid_to_shared_grid(da, shared_lats, shared_lons):
         da.lon[0] + 360
     ], dim='lon')
 
-    da_interp = da.interp({'lat': shared_lats, 'lon': shared_lons})
+    da_interp = da_pad.interp({'lat': shared_lats, 'lon': shared_lons})
 
     return da_interp
